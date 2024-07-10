@@ -19,7 +19,7 @@ keyboard before the project preview will update.
     />
   </head>
   <body>
-   
+    <button id="greenFlag">Green Flag</button>
     <div id="project"></div>
 
     <script type="module">
@@ -28,11 +28,11 @@ keyboard before the project preview will update.
       project.attach("#project");
 
       document.querySelector("#greenFlag").addEventListener("click", () => {
-       
+        project.greenFlag();
       });
 
       // Autoplay
-   
+      project.greenFlag();
     </script>
   </body>
 </html>
